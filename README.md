@@ -1,4 +1,6 @@
 This project is simply iterating through various elements in Dotnet (but not exclusively Dotnet specfic practices). Nothing fancy or usable is meant to come from this, just a bit of practice before an interview :P
+obs. everything is "logged" in the Issues tab on Github with notes, examples, and other "thought" I had throughout this little project.
+
 This includes:
 
 - Conceptual ER diagram
