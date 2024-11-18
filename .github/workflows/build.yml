@@ -20,10 +20,11 @@ jobs:
           dotnet-version: '7.0' # Specify your project's .NET version
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore .\EFCoreProject.sln
+
 
       - name: Build project
-        run: dotnet build --configuration Release
+        run: dotnet build --configuration Release .\EFCoreProject.sln
 
       #- name: Run tests
       #  run: dotnet test --no-build --verbosity normal
