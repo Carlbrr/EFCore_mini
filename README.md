@@ -6,10 +6,10 @@ This includes:
 - Conceptual ER diagram
 - Project Architecture decisions
 - SQLite: For local in-proccess storage
-- EF Core: Working through ORM and specific SQLite controller to migrate and bridge the source C# code with the database file
+- EF Core: Working through ORM and specific SQLite controller/connector to migrate and bridge the source C# code with the database file
     -   This includes mapping the ER diagram to a specific schema, modelled in C#
     -   Ensuring at least BCNF (normalization) to combat redudancy and anomalies
-- LINQ vs Raw SQL: re-iterating syntax of declarative linq in a functional-ish chaining/pipelining (w. lazy execution and a standard syntax for other data sources)
+- LINQ vs Raw SQL: re-iterating syntax of declarative linq in a functional-ish (declarative, where oop is imperative) chaining/pipelining (w. lazy execution and a standard syntax for other data sources), meaning we can also utilize strongly typed queries (errors at runtime) relying on the mapping of ef core
     - Extend with an enumarable operation.. maybe
 - MinimalAPI: exposing endpoints through MinimalAPI. This should work with some repository and consider asynchronous operations to not stall UI (which is not included here, but for good practice)
 - Testing: Unit testing to some X coverage, ideally checked by SonarCloud and triggered by Github Actions
